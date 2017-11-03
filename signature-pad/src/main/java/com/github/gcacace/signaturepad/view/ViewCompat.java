@@ -1,4 +1,4 @@
-package com.github.gcacace.signaturepad.view;
+package com.github.SDL.signaturepad.view;
 
 import android.os.Build;
 import android.view.View;

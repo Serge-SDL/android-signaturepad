@@ -47,7 +47,7 @@ Add this dependency to your `pom.xml`:
 
 1. Add the `SignaturePad` view to the layout you want to show.
 ```xml
- <com.github.gcacace.signaturepad.views.SignaturePad
+ <com.github.SDL.signaturepad.views.SignaturePad
      xmlns:android="http://schemas.android.com/apk/res/android"
      xmlns:app="http://schemas.android.com/apk/res-auto"
      android:id="@+id/signature_pad"
@@ -99,7 +99,7 @@ Add this dependency to your `pom.xml`:
 The `SignaturePad` view has custom Data Binding attribute setters for all the listener events:
 
 ```xml
- <com.github.gcacace.signaturepad.views.SignaturePad
+ <com.github.SDL.signaturepad.views.SignaturePad
      xmlns:android="http://schemas.android.com/apk/res/android"
      xmlns:bind="http://schemas.android.com/apk/res-auto"
      android:id="@+id/signature_pad"

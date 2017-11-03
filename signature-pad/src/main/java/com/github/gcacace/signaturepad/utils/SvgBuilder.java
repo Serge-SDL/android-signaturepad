@@ -1,4 +1,4 @@
-package com.github.gcacace.signaturepad.utils;
+package com.github.SDL.signaturepad.utils;
 
 public class SvgBuilder {
 
