@@ -182,7 +182,7 @@ public class SignaturePad extends View {
         mLastWidth = (mMinWidth + mMaxWidth) / 2;
 
         if (mSignatureBitmap != null) {
-            mSignatureBitmap = null;
+            clearBitmap();
             ensureSignatureBitmap();
         }
 
@@ -194,6 +194,20 @@ public class SignaturePad extends View {
     public void clear() {
         this.clearView();
         this.mHasEditState = true;
+    }
+
+    private void clearBitmap(){
+        if(mSignatureBitmapCanvas != null){
+            mSignatureBitmapCanvas.setBitmap(null);
+            mSignatureBitmapCanvas = null;
+        }
+
+        if(mSignatureBitmap != null){
+            if(!mSignatureBitmap.isRecycled()) {
+                mSignatureBitmap.recycle();
+            }
+            mSignatureBitmap = null;
+        }
     }
 
     @Override
